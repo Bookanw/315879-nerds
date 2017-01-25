@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Олег Шакин](https://up.htmlacademy.ru/htmlcss/16/user/315879).
-* Наставник: `Неизвестно`.
+* Наставник: [Вадим Новаш] (https://htmlacademy.ru/profile/stakeout).
 
 ---
 
