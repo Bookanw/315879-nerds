@@ -2,8 +2,9 @@
 <html lang="ru">
 
 <head>
+  <title>Nerds</title>
   <meta charset="utf-8">
-  <title>HTML Academy: Нёрдс</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
 </head>
 
 <body>
@@ -25,53 +26,65 @@
     <div class="slider"></div>
     <p>Магазин готовых шаблонов</p>
   </header>
-<section class="column-left">
-  <p class="price">Стоимость</p>
+  <section class="column-left">
+    <p class="price">Стоимость</p>
+    <form action="form.php" method="GET">
+      <div class="range-filter">
+        <div class="range-controls">
+          <div class="scale">
+            <div class="bar" style="margin-left: 20%; width: 30%"></div>
+          </div>
+          <div class="toggle toggle-min"></div>
+          <div class="toggle toggle-max"></div>
+        </div>
+        <div class="price-controls">
+          <label class="min-price">от <input name="min-price" type="text" value="0"></label>
+          <label class="max-price">до <input name="max-price" type="text" value="15000"></label>
+        </div>
+      </div>
+    </form>
+    <p class="option">Сетка</p>
 
-  <p class="option">Сетка</p>
-
-  <ul>
-    <li>Адаптивная</li>
-    <li>Фексированная</li>
-    <li>Резиновая</li>
-  </ul>
-  <p class="properties">
     <ul>
-      <li>Слайдер</li>
-      <li>Блок преимуществ</li>
-      <li>Новости</li>
-      <li>Галерея</li>
-      <li>Корзина</li>
+      <li>Адаптивная</li>
+      <li>Фексированная</li>
+      <li>Резиновая</li>
     </ul>
-  </p>
-<a href="" class="features-link">ПОКАЗАТЬ</a>
-<section class="column-right">
-  <section class="goods">
-    <div class="goods-img"><img src="http://placehold.it/360x617" alt=""></div>
-    <div class="goods-img"><img src="http://placehold.it/360x617" alt=""></div>
-    <div class="goods-img"><img src="http://placehold.it/360x617" alt=""></div>
-    <div class="goods-img"><img src="http://placehold.it/360x617" alt=""></div>
-    <div class="goods-img"><img src="http://placehold.it/360x617" alt=""></div>
-    <div class="goods-img"><img src="http://placehold.it/360x617" alt=""></div>
-  </section>
-
-
-  <footer class="page-footer">
-    <div class="container">
-      <section class="footer-social">
-        <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
-        <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-        <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
-        <section class="footer-contacts">
-          <h5>NЁRDS DISIGN STUDIO</h5>
-          <p>191186, Санкт-Петербург,<br>
-          ул. Б. Конюшенная, д.19/8  <br>
-          тел. +7(812) 275-75-75
-          </p>
+    <p class="properties">
+      <ul>
+        <li>Слайдер</li>
+        <li>Блок преимуществ</li>
+        <li>Новости</li>
+        <li>Галерея</li>
+        <li>Корзина</li>
+      </ul>
+    </p>
+    <a href="" class="features-link">ПОКАЗАТЬ</a>
+    <section class="column-right">
+      <section class="goods">
+        <div class="goods-img"><img src="http://placehold.it/360x617" alt=""></div>
+        <div class="goods-img"><img src="http://placehold.it/360x617" alt=""></div>
+        <div class="goods-img"><img src="http://placehold.it/360x617" alt=""></div>
+        <div class="goods-img"><img src="http://placehold.it/360x617" alt=""></div>
+        <div class="goods-img"><img src="http://placehold.it/360x617" alt=""></div>
+        <div class="goods-img"><img src="http://placehold.it/360x617" alt=""></div>
       </section>
-      <p class="friendship">Давайте дружить, это выгодно! Скидка 10% для друзей из социальных сетей.</p>
-    </div>
-  </footer>
+
+
+      <footer class="page-footer">
+        <div class="container">
+          <section class="footer-social">
+            <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+            <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+            <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+            <section class="footer-contacts">
+              <h5>NЁRDS DISIGN STUDIO</h5>
+              <p>191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д.19/8 <br> тел. +7(812) 275-75-75
+              </p>
+            </section>
+            <p class="friendship">Давайте дружить, это выгодно! Скидка 10% для друзей из социальных сетей.</p>
+        </div>
+      </footer>
 
 
 </body>
