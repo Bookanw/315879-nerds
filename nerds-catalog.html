@@ -50,81 +50,99 @@
     </div>
   </header>
   <main class="shop-content container clearfix">
-    <div class="shop-content-left">
-      <h4>Сетка:</h4>
-      <form class="goods-grid" action="#" method="post">
-        <ul class="grid-selector">
-          <li>
-            <input id="adapt" type="radio" name="radio" />
-            <label for="adapt">Адаптивная</label>
-          </li>
-          <li>
-            <input id="fixed" type="radio" name="radio" />
-            <label for="fixed">Фиксированная</label>
-          </li>
-          <li>
-            <input id="string" type="radio" name="radio" />
-            <label for="string">Резиновая</label>
-          </li>
-        </ul>
-        <h4>Особенности:</h4>
-        <ul class="features-selector">
-          <li>
-            <input type="checkbox" id="slider" name="slider">
-            <label for="slider">Слайдер</label>
-          </li>
-          <li>
-            <input type="checkbox" id="benefits" name="benefits">
-            <label for="benefits">Блок преимуществ</label>
-          </li>
-          <li>
-            <input type="checkbox" id="news" name="news">
-            <label for="news">Новости</label>
-          </li>
-          <li>
-            <input type="checkbox" id="gallery" name="gallery">
-            <label for="gallery">Галерея</label>
-          </li>
-          <li>
-            <input type="checkbox" id="basket" name="basket">
-            <label for="basket">Корзина</label>
-          </li>
-        </ul>
-        <button class="btn btn-grey goods-show">Показать</button>
-      </form>
-    </div>
-    <div class="shop-content-right">
-      <div class="sort-variations">
-        <p>Сортировать:</p>
-        <ul class="goods-sort">
-          <li>
-            <a href="#">По цене</a>
-          </li>
-          <li>
-            <a href="#">По типу</a>
-          </li>
-          <li>
-            <a href="#">По названию</a>
-          </li>
-        </ul>
-        <ul class="sort-ways">
-          <li>
-            <a class="sort-way-up" href="#"></a>
-          </li>
-          <li>
-            <a class="sort-way-down" href="#"></a>
-          </li>
-          <ul>
-      </div>
-      <section class="sites-catalog clearfix">
-        <div class="catalog catalog-1">
-          <div class="item-label">
-            <div class="dots">
+    <div class=price>
+      <h4>Стоимость</h4>
+      <form action="form.php" method="GET">
+        <div class="range-filter">
+          <div class="range-controls">
+            <div class="scale">
+              <div class="bar" style="margin-left: 20%; width: 30%"></div>
             </div>
+            <div class="toggle toggle-min"></div>
+            <div class="toggle toggle-max"></div>
           </div>
-          <img src="img/img-sedona.jpg" width="360" height="576" alt="Информационный сайт для туристов">
-          <div class="hover-description hover-1">
-            <h4>SEDONA<h4>
+          <div class="price-controls">
+            <label class="min-price">от <input name="min-price" type="text" value="0"></label>
+            <label class="max-price">до <input name="max-price" type="text" value="15000"></label>
+          </div>
+        </div>
+      </form>
+      <div class="shop-content-left">
+        <h4>Сетка:</h4>
+        <form class="goods-grid" action="#" method="post">
+          <ul class="grid-selector">
+            <li>
+              <input id="adapt" type="radio" name="radio" />
+              <label for="adapt">Адаптивная</label>
+            </li>
+            <li>
+              <input id="fixed" type="radio" name="radio" />
+              <label for="fixed">Фиксированная</label>
+            </li>
+            <li>
+              <input id="string" type="radio" name="radio" />
+              <label for="string">Резиновая</label>
+            </li>
+          </ul>
+          <h4>Особенности:</h4>
+          <ul class="features-selector">
+            <li>
+              <input type="checkbox" id="slider" name="slider">
+              <label for="slider">Слайдер</label>
+            </li>
+            <li>
+              <input type="checkbox" id="benefits" name="benefits">
+              <label for="benefits">Блок преимуществ</label>
+            </li>
+            <li>
+              <input type="checkbox" id="news" name="news">
+              <label for="news">Новости</label>
+            </li>
+            <li>
+              <input type="checkbox" id="gallery" name="gallery">
+              <label for="gallery">Галерея</label>
+            </li>
+            <li>
+              <input type="checkbox" id="basket" name="basket">
+              <label for="basket">Корзина</label>
+            </li>
+          </ul>
+          <button class="btn btn-grey goods-show">Показать</button>
+        </form>
+      </div>
+      <div class="shop-content-right">
+        <div class="sort-variations">
+          <p>Сортировать:</p>
+          <ul class="goods-sort">
+            <li>
+              <a href="#">По цене</a>
+            </li>
+            <li>
+              <a href="#">По типу</a>
+            </li>
+            <li>
+              <a href="#">По названию</a>
+            </li>
+          </ul>
+          <ul class="sort-ways">
+            <li>
+              <a class="sort-way-up" href="#"></a>
+            </li>
+            <li>
+              <a class="sort-way-down" href="#"></a>
+            </li>
+            <ul>
+        </div>
+
+        <section class="sites-catalog clearfix">
+          <div class="catalog catalog-1">
+            <div class="item-label">
+              <div class="dots">
+              </div>
+            </div>
+            <img src="img/img-sedona.jpg" width="360" height="576" alt="Информационный сайт для туристов">
+            <div class="hover-description hover-1">
+              <h4>SEDONA<h4>
         <p>Информационный сайт для туристов</p>
         <a class="btn btn-buy" href="#">9900 р.</a>
       </div>
@@ -216,24 +234,24 @@
 <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=-eY-oZ5nFuqfceg5AXg3SDxkP-sx5QMk&width=100%&height=416&lang=ru_RU&sourceType=constructor&scroll=true"></script>
 <div class="about-us">
   <h4>NЁRDS DESIGN STUDIO</h4>
-            <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-            <p>тел. +7 (812) 275-75-75</p>
-            <button class="btn feedback-btn" href="#">Напишите нам</button>
+              <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+              <p>тел. +7 (812) 275-75-75</p>
+              <button class="btn feedback-btn" href="#">Напишите нам</button>
+            </div>
           </div>
-        </div>
-        <form class="feedback-form" method="post" action="">
-          <button class="feedback-form-close" type="button" title="Закрыть"></button>
-          <div class="name-input">
-            <label for="name">Ваше имя:</label>
-            <input type="text" id="name" name="name" placeholder="Представьтесь, пожалуйста" required>
-          </div>
-          <div class="email-input">
-            <label for="email">Ваш e-mail:</label>
-            <input type="email" id="email" name="email" placeholder="Для отправки ответа" required>
-          </div>
-          <div class="textarea-input">
-            <label for="textarea">Текст письма:</label>
-            <textarea name="textarea" id="textarea" placeholder="В свободной форме"></textarea required>
+          <form class="feedback-form" method="post" action="">
+            <button class="feedback-form-close" type="button" title="Закрыть"></button>
+            <div class="name-input">
+              <label for="name">Ваше имя:</label>
+              <input type="text" id="name" name="name" placeholder="Представьтесь, пожалуйста" required>
+            </div>
+            <div class="email-input">
+              <label for="email">Ваш e-mail:</label>
+              <input type="email" id="email" name="email" placeholder="Для отправки ответа" required>
+            </div>
+            <div class="textarea-input">
+              <label for="textarea">Текст письма:</label>
+              <textarea name="textarea" id="textarea" placeholder="В свободной форме"></textarea required>
  </div>
    <input type="submit" class="btn" value="Отправить">
  </form>
